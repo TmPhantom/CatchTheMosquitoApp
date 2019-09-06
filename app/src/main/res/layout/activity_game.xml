@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context=".GameActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/viewRound"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:background="#00FFFFFF"
+            android:textStyle="bold"
+            android:text="TextView"
+            android:textColor="#3F51B5"
+            android:textSize="15pt"/>
+
+        <TextView
+            android:id="@+id/viewPoints"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:text="TextView"
+            android:textColor="#AF6F10"
+            android:textSize="15pt"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/viewGame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:id="@+id/barNeeded"
+                android:layout_gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#0000FF">
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/viewNeeded"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:text="How many needed" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:id="@+id/barTime"
+                android:layout_gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#5555FF">
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/viewTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:text="time" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>
